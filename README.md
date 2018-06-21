@@ -1,4 +1,4 @@
-# kcaP nevaR - pizza poll
+# kcap nevar - Pizza poll
 > Short desc about what your product does.
 
 document status: [work in progress]
