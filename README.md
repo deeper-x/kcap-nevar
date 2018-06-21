@@ -1,4 +1,4 @@
-# kcap nevar - Pizza poll
+# kcap nevar - For pizza lovers
 > Short desc about what your product does.
 
 document status: [work in progress]
