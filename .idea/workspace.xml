@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6e01ce0-7fbd-429a-8fba-482590a56216" name="Default" comment="" />
+    <list default="true" id="c6e01ce0-7fbd-429a-8fba-482590a56216" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza_lovers/auth_voters/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pizza_lovers/auth_voters/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza_lovers/auth_voters/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pizza_lovers/auth_voters/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +21,18 @@
         <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pizza_lovers/vote_manager/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#647#679#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -27,54 +42,7 @@
         <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auth_voters/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/auth_manager/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" selection-start-line="24" selection-end-line="39" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/registration/logout.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth_voters/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
+              <caret selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -82,26 +50,44 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+            <state relative-caret-position="326">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/home_page.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pizza_lovers/auth_voters/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/registration/signup.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pizza_lovers/vote_manager/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="60">
+              <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pizza_lovers/auth_voters/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +97,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -132,10 +118,14 @@
         <option value="$PROJECT_DIR$/pizza_lovers/templates/home_page.html" />
         <option value="$PROJECT_DIR$/pizza_lovers/templates/signup.html" />
         <option value="$PROJECT_DIR$/pizza_lovers/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py" />
         <option value="$PROJECT_DIR$/auth_voters/views.py" />
-        <option value="$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py" />
         <option value="$PROJECT_DIR$/auth_voters/urls.py" />
+        <option value="$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py" />
+        <option value="$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py" />
+        <option value="$PROJECT_DIR$/pizza_lovers/auth_voters/views.py" />
+        <option value="$PROJECT_DIR$/pizza_lovers/auth_voters/urls.py" />
+        <option value="$PROJECT_DIR$/pizza_lovers/vote_manager/urls.py" />
+        <option value="$PROJECT_DIR$/pizza_lovers/vote_manager/views.py" />
       </list>
     </option>
   </component>
@@ -163,31 +153,25 @@
             <path>
               <item name="kcap-nevar" type="b2602c69:ProjectViewProjectNode" />
               <item name="kcap-nevar" type="462c0819:PsiDirectoryNode" />
+              <item name="pizza_lovers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kcap-nevar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kcap-nevar" type="462c0819:PsiDirectoryNode" />
+              <item name="pizza_lovers" type="462c0819:PsiDirectoryNode" />
               <item name="auth_voters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kcap-nevar" type="b2602c69:ProjectViewProjectNode" />
               <item name="kcap-nevar" type="462c0819:PsiDirectoryNode" />
               <item name="pizza_lovers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kcap-nevar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kcap-nevar" type="462c0819:PsiDirectoryNode" />
-              <item name="pizza_lovers" type="462c0819:PsiDirectoryNode" />
               <item name="pizza_lovers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kcap-nevar" type="b2602c69:ProjectViewProjectNode" />
               <item name="kcap-nevar" type="462c0819:PsiDirectoryNode" />
               <item name="pizza_lovers" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kcap-nevar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kcap-nevar" type="462c0819:PsiDirectoryNode" />
-              <item name="pizza_lovers" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
+              <item name="vote_manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -303,7 +287,7 @@
     <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" selection-end-line="20" />
+          <caret selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -311,16 +295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="24" selection-start-line="24" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="e#647#679#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -348,13 +322,6 @@
     <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/registration/logout.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth_voters/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -367,10 +334,143 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth_voters/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state>
+          <caret selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth_voters/templates/signup.html" />
+    <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/shipflow/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/root_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/home_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/shipflow/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/goods_manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/templates/registration/logout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth_voters/views.py" />
+    <entry file="file://$PROJECT_DIR$/auth_voters/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/auth_manager/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shipflow-vopt/shipflow/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/auth_voters/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/auth_voters/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/vote_manager/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizza_lovers/vote_manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
