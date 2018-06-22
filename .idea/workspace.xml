@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6e01ce0-7fbd-429a-8fba-482590a56216" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/.~lock.client_requests.doc#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.~lock.kcap-nevar-fun_reqs.xlsx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pizza_lovers/pizza_lovers/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="c6e01ce0-7fbd-429a-8fba-482590a56216" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
