@@ -20,5 +20,6 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path(r'admin/', admin.site.urls),
-    path(r'auth_voters/', include('auth_voters.urls'))
+    path(r'auth_voters/', include('auth_voters.urls')),
+    path(r'vote_manager/', include('vote_manager.urls')),
 ]

@@ -44,6 +44,7 @@ def signup(request):
 
     return render(request, 'registration/signup.html', {'signup_form': signup_form})
 
+@login_required
 def logout_view(request):
     logout(request)
 

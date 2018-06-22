@@ -7,5 +7,4 @@ urlpatterns = [
     url(r'^signup/$', views.signup, name='signup'),
     url(r'^login/$', auth_views.LoginView.as_view(), name='login'),
     url(r'^logout/$', views.logout_view, name='logout'),
-    url(r'^home_page/$', views.home_page, name='home_page'),
 ]
