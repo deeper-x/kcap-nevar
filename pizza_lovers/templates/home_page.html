@@ -1,4 +1,14 @@
 {% extends "root_page.html" %}
-{% block content %}
-#TODO
+{% load static %}
+{% block head_content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<script type="text/javascript" src="{% static 'js/d3.min.js' %}"></script>
+
+{% endblock %}
+{% block body_content %}
+<div id="chart-container">
+
+</div>
+<script type="text/javascript" src="{% static 'js/main_chart.js' %}"></script>
+
 {% endblock %}

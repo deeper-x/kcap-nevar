@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.voter-bar {
+  fill: blue;
+  stroke: black;
+  stroke-width: 1;
+}
+
+
+.voter-bar:hover {
+  fill: red;
+}
