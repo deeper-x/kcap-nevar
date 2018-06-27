@@ -1,4 +1,5 @@
-
+{% extends "root_page.html" %}
+{% block body_content %}
 <form role="form" action="{% url 'proxy_auth' %}" method="post" class="login-form">
 {% csrf_token %}
 <div class="form-group">
@@ -17,3 +18,4 @@
 <button type="submit" class="btn btn-default"> Sign in </button>
 </form>
 
+{% endblock %}

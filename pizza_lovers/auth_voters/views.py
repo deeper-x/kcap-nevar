@@ -28,7 +28,9 @@ def proxy_auth(request):
 def signup(request):
     if request.method == 'POST':
         signup_form = UserCreationForm(request.POST)
-
+        
+        print(dir(signup_form))
+        
         if signup_form.is_valid():
             signup_form.save()
 
@@ -44,11 +46,13 @@ def signup(request):
 
     return render(request, 'registration/signup.html', {'signup_form': signup_form})
 
+
 @login_required
 def logout_view(request):
     logout(request)
 
     return redirect('login')
+
 
 @login_required
 def home_page(request):

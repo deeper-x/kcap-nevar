@@ -2,13 +2,42 @@
 {% load static %}
 {% block head_content %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-<script type="text/javascript" src="{% static 'js/d3.min.js' %}"></script>
-
+<script type="text/javascript" src="/static/js/main_chart.js"></script>
 {% endblock %}
 {% block body_content %}
-<div id="chart-container">
 
+<canvas id="voter-chart"></canvas>
+
+{% if user.is_authenticated %}
+<div id="button-container" align="center">
+	<button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="send_vote_btn">I love pizza!</button>
 </div>
-<script type="text/javascript" src="{% static 'js/main_chart.js' %}"></script>
+{% else %}
+<p>Do you love pizza?  <a href="{% url 'login' %}">Please log in...</a></p>
+{% endif %}
+
+
 
 {% endblock %}
+
+{% block footer_scripts %}
+ {% if user.is_authenticated %}
+ <script>
+ 
+ 
+ $("#send_vote_btn").on('click', function(){
+	$.ajax({
+		url: "/vote_manager/send_vote",
+		success: function(){
+			$.notifyBar({ cssClass: "success", html: "Vote saved!", position: "bottom" });
+		}
+	})
+ })
+ 
+  
+ </script>
+{% endif %}
+
+
+{% endblock %}
+

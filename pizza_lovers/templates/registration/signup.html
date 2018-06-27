@@ -1,10 +1,24 @@
 {% extends 'root_page.html' %}
 
 {% block body_content %}
-  <h2>Sign up</h2>
+ <h2>Sign up</h2>
   <form method="post">
     {% csrf_token %}
-    {{ signup_form.as_p }}
+		<div class="row">
+			<div class="col-sm-2">{{ signup_form.username.label_tag }}</div>
+			<div class="col-sm-2">{{ signup_form.username }}</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">{{ signup_form.password1.label_tag }}</div>
+			<div class="col-sm-2">{{ signup_form.password1 }}</div>
+		</div>
+				<div class="row">
+			<div class="col-sm-2">{{ signup_form.password2.label_tag }}</div>
+			<div class="col-sm-2">{{ signup_form.password2 }}</div>
+		</div>
+		<div class="row" align="left">
+			<div class="col-sm-12 error-msg">{{ signup_form.errors }}</div>
+		</div>
+		
     <button type="submit">Sign up</button>
-  </form>
-{% endblock %}
+  </form>{% endblock %}

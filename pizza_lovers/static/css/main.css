@@ -4,12 +4,30 @@ html, body {
 }
 
 .voter-bar {
-  fill: blue;
-  stroke: black;
+  fill: transparent;
+  stroke: trans;
   stroke-width: 1;
+  background-color: transparent;
 }
-
 
 .voter-bar:hover {
   fill: red;
+}
+
+.chart-container{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.button-container{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+.bar { fill: steelblue; }
+
+
+.errorlist {
+	color:red;	
 }
