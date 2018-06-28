@@ -5,16 +5,23 @@
 
 ## Deploy
  
+Run as docker  
 ```sh
 $ cd <root_dir>
-# first create db structure
+$ #first create db structure
 $ sudo docker-compose run web python3 manage.py migrate
-# run compose
+$ # run compose
 $ sudo docker-compose up
 ```
 
-## Requirements and features
 
+## Requirements
+* python 3.6 or higher
+* Docker (+ Compose)
+
+#TODO - URI to docker registry (image)
+
+## Features description
 * A user can signup and login, and tell how much he loves pizza, by clicking the "I love pizza" button
 * When vote is registered, barchart is updated showing real time data. 
 * Chart is updated also at regular intervals. 
