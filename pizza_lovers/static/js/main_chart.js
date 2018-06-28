@@ -22,7 +22,7 @@ function draw_chart(array_to_send){
     if (array_to_send){
     	var ctx = document.getElementById('voter-chart').getContext('2d');
     	var chart = new Chart(ctx, {
-    	    type: 'horizontalBar',
+    	    type: 'bar',
     	    data: {
     	        labels: array_to_send[0],
     	        datasets: [{

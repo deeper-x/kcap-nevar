@@ -3,20 +3,9 @@ html, body {
   height: 100%;
 }
 
-.voter-bar {
-  fill: transparent;
-  stroke: trans;
-  stroke-width: 1;
-  background-color: transparent;
-}
 
-.voter-bar:hover {
-  fill: red;
-}
-
-.chart-container{
-	padding-top: 100px;
-	padding-bottom: 100px;
+#voter-chart {
+	padding-bottom: 20px;
 }
 
 .button-container{
