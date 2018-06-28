@@ -53,7 +53,7 @@
             </li>
             {% else %}
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#button-container">vote!</a>
+              <a class="nav-link js-scroll-trigger" id="link_vote" href="#button-container">Vote</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="{% url 'logout' %}">Logout</a>
@@ -77,7 +77,7 @@
       <div class="container">
         <div class="row">
         {% if user.is_authenticated %}	
-        	<div class="col-sm-12">Hello {{ user }}. Just vote!</div>
+        	<div class="col-sm-12">Welcome, {{ user }}.</div>
         {% endif %}
         </div>
         <div class="row text-center">
@@ -126,4 +126,12 @@
 
 
 {% endblock %}
+
+<script>
+$("#link_vote").on('click', function(){	
+	$.notifyBar({ cssClass: "default", html: "Please press the 'love button'...", position: "bottom" });
+})
+
+</script>
+
 </html>

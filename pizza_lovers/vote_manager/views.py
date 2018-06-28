@@ -9,7 +9,7 @@ from django.http.response import HttpResponse
 
 
 def get_voters_top_ten(request):
-    qs_votes = Voter.objects.all().order_by('vote_counter')
+    qs_votes = Voter.objects.all().order_by('-vote_counter')[:10]
 
     list_votes = [i.vote_counter for i in qs_votes]
     list_names = [y.fko_user.username for y in qs_votes]

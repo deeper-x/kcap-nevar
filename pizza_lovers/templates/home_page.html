@@ -10,10 +10,10 @@
 
 {% if user.is_authenticated %}
 <div id="button-container" align="center">
-	<button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="send_vote_btn">I love pizza!</button>
+	<button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="send_vote_btn"><i class="fa fa-heart"></i> I love pizza!</button>
 </div>
 {% else %}
-<p>Do you love pizza?  <a href="{% url 'login' %}">Please log in...</a></p>
+<p>Do you love pizza?  <a href="{% url 'login' %}">Log in and vote</a></p>
 {% endif %}
 
 
@@ -29,7 +29,8 @@
 	$.ajax({
 		url: "/vote_manager/send_vote",
 		success: function(){
-			$.notifyBar({ cssClass: "success", html: "Vote saved!", position: "bottom" });
+			get_chart();
+			$.notifyBar({ cssClass: "success", html: "Vote sent. Thank you!", position: "bottom" });
 		}
 	})
  })
