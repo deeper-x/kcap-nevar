@@ -1,7 +1,7 @@
 /*
  * Main chart settings
  */
-var REFRESH_INT = 60000; //in ms
+var REFRESH_INT = 1000; //ms
 var BARS_BG = "rgb(120, 209, 225, 0.3)";
 var BARS_BR = "rgb(206, 172, 50)";
 var CHART_LABEL = "Top 10 voters";
@@ -18,8 +18,10 @@ function draw_chart(array_to_send){
 	 * - array_to_send[1] := labels
 	 * 
 	 */
+		
 	$("#chart-container").html("");
-    if (array_to_send){
+    
+	if (array_to_send.length == 2){
     	var ctx = document.getElementById('voter-chart').getContext('2d');
     	var chart = new Chart(ctx, {
     	    type: 'bar',
@@ -48,10 +50,14 @@ function get_chart(){
             console.log("Error fetching voters data...");
         }
     }).done(function(data){
+    	console.log("fetching data:", data);
     	draw_chart(data);
     });
     
-    /* need returning itself for 1st setInteval call (graph drawn immediately) */
+    /* need returning itself for 1st setInteval 
+     * call (I need graph rendered onload) 
+     */
+    
     return get_chart;
 }
 
