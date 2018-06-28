@@ -43,20 +43,20 @@
           <ul class="navbar-nav text-uppercase ml-auto">
             {% if not user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{% url 'login' %}">Login</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'login' %}">Sign in</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" id="results-btn" href="{% url 'home_page' %}">Results</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{% url 'signup' %}">Signup</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'signup' %}">Sign up</a>
             </li>
             {% else %}
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" id="link_vote" href="#button-container">Vote</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{% url 'logout' %}">Logout</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'logout' %}">Sign out</a>
             </li>
             {% endif %}
           </ul>

@@ -1,24 +1,27 @@
 {% extends 'root_page.html' %}
+{% load widget_tweaks %}
 
 {% block body_content %}
  <h2>Sign up</h2>
-  <form method="post">
+  <form method="post" class="login-form">
     {% csrf_token %}
-		<div class="row">
-			<div class="col-sm-2">{{ signup_form.username.label_tag }}</div>
-			<div class="col-sm-2">{{ signup_form.username }}</div>
+		<div class="row form-group">
+			{{ signup_form.username.label_tag }}
+			{{ signup_form.username|add_class:"form-control" }}
 		</div>
-		<div class="row">
-			<div class="col-sm-2">{{ signup_form.password1.label_tag }}</div>
-			<div class="col-sm-2">{{ signup_form.password1 }}</div>
+		<div class="row form-group">
+			{{ signup_form.password1.label_tag }}
+			{{ signup_form.password1|add_class:"form-control" }}
 		</div>
-				<div class="row">
-			<div class="col-sm-2">{{ signup_form.password2.label_tag }}</div>
-			<div class="col-sm-2">{{ signup_form.password2 }}</div>
+		<div class="row form-group">
+			{{ signup_form.password2.label_tag }}
+			{{ signup_form.password2|add_class:"form-control" }}
 		</div>
-		<div class="row" align="left">
+		<div class="row form-group">
+			<button type="submit" class="btn btn-default">Sign up</button>		
+		</div>
+		<div class="row form-group" align="left">
 			<div class="col-sm-12 error-msg">{{ signup_form.errors }}</div>
 		</div>
-		
-    <button type="submit">Sign up</button>
+    
   </form>{% endblock %}
