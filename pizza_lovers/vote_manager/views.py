@@ -9,10 +9,16 @@ from django.http.response import HttpResponse
 
 
 def get_voters_top_ten(request):
+    """
+    get top ten voters from DB, creating two list (votes and labels).
+    @return: json string with a 
+    """
+    list_votes, list_names = [], []
     qs_votes = Voter.objects.all().order_by('-vote_counter')[:10]
 
-    list_votes = [i.vote_counter for i in qs_votes]
-    list_names = [y.fko_user.username for y in qs_votes]
+    for i in qs_votes:
+        list_votes.append(i.vote_counter)
+        list_names.append(i.fko_user.username)
 
     data_container = [list_names, list_votes]
 
@@ -23,6 +29,7 @@ def home_page(request):
     return render(request, 'home_page.html')
 
 
+@login_required
 def send_vote(request):
     if request.user.is_authenticated:
         obj_user = request.user
