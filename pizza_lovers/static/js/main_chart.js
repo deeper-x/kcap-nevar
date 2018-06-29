@@ -9,29 +9,29 @@ var CHART_LABEL = "Top 10 voters";
 /*
  * functions definitions
  */
-function draw_chart(array_to_send){
+function draw_chart(data_obj){
 	/*
 	 * Defines a chart.js barchart, flushing existing div container and re-drawing it
 	 * 
-	 * @param array_to_send: list with data and metadata
-	 * - array_to_send[0] := numeric data 
-	 * - array_to_send[1] := labels
+	 * @param data_obj: list with data and metadata
+	 * - data_obj.votes <- numeric data 
+	 * - data_obj.names <- labels
 	 * 
 	 */
 		
 	$("#chart-container").html("");
-    
-	if (array_to_send.length == 2){
+    	
+	if (data_obj){
     	var ctx = document.getElementById('voter-chart').getContext('2d');
     	var chart = new Chart(ctx, {
     	    type: 'bar',
     	    data: {
-    	        labels: array_to_send[0],
+    	        labels: data_obj.names,
     	        datasets: [{
     	            label: CHART_LABEL,
     	            backgroundColor : BARS_BG,
     	            borderColor: BARS_BR,
-    	            data: array_to_send[1],
+    	            data: data_obj.votes,
     	        }]
     	    },
     	    options: {animation: false}
@@ -50,7 +50,6 @@ function get_chart(){
             console.log("Error fetching voters data...");
         }
     }).done(function(data){
-    	console.log("fetching data:", data);
     	draw_chart(data);
     });
     
