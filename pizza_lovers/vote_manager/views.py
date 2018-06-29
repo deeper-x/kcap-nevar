@@ -10,8 +10,9 @@ from django.http.response import HttpResponse
 
 def get_voters_top_ten(request):
     """
-    get top ten voters from DB, creating two list (votes and labels).
-    @return: json string with a 
+    fetch top ten voters from DB, creating two list (votes and labels).
+    @rtype: applcation/json
+    @return: dictionary containing two lists: names and votes
     """
     list_votes, list_names = [], []
     qs_votes = Voter.objects.all().order_by('-vote_counter')[:10]
@@ -20,9 +21,10 @@ def get_voters_top_ten(request):
         list_votes.append(i.vote_counter)
         list_names.append(i.fko_user.username)
 
-    data_container = [list_names, list_votes]
+    data_container = {'names': list_names,
+                      'votes': list_votes}
 
-    return JsonResponse(data_container, safe=False)
+    return JsonResponse(data_container)
 
 
 def home_page(request):
