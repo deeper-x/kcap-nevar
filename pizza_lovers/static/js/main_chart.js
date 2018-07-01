@@ -1,21 +1,60 @@
 /*
  * Main chart settings
  */
-var REFRESH_INT = 1000; //ms
+var APP_NAME="Kcap Nevar"
+var REFRESH_INT = 60000; // in ms
 var BARS_BG = "rgb(120, 209, 225, 0.3)";
 var BARS_BR = "rgb(206, 172, 50)";
-var CHART_LABEL = "Top 10 voters";
+var CHART_LABEL = APP_NAME + " - Top 10 voters";
 
 /*
  * functions definitions
  */
+
+function send_vote(){
+	/*
+	 * @summary: author user save vote, chart is updated and notification showed
+	 * @return: function itself
+	 */
+	$.ajax({
+			url: "/vote_manager/send_vote",
+			success: function(data){
+				// update existing chart 
+				get_chart();
+				
+				pizza_notify(data=data);
+			}
+	})
+	
+	/* function is called in onclick handler parameter (which type is function). 
+	 * see http://api.jquery.com/on
+	 */
+	
+	return send_vote;
+}
+
+
+function pizza_notify(data=APP_NAME, css_class="success", msg_position="bottom"){
+	/*
+	 * @summary: notify wrapper
+	 * @return: notification
+	 * @param data: text message [default: APP_NAME]
+	 * @param css_class: notification style. error, warning, success [default]
+	 * @param msg_position: top, bottom [default]
+	 */
+	$.notifyBar({ cssClass: css_class, 
+				  html: data, 
+				  position: msg_position });
+	
+}
+
 function draw_chart(data_obj){
 	/*
-	 * Defines a chart.js barchart, flushing existing div container and re-drawing it
+	 * @summary: Defines a chart.js barchart, flushing existing div container and re-drawing it
 	 * 
 	 * @param data_obj: list with data and metadata
-	 * - data_obj.votes <- numeric data 
-	 * - data_obj.names <- labels
+	 * [data_obj.votes]: numeric data 
+	 * [data_obj.names]: labels
 	 * 
 	 */
 		
@@ -41,7 +80,8 @@ function draw_chart(data_obj){
 
 function get_chart(){
 	/*
-	 * Given a dataset, populate the chart
+	 * @summary: Read async dataset, populate the chart
+	 * @return: function itself
 	 */
     var ret_val = $.ajax({
         url: '/vote_manager/get_voters_top_ten',
@@ -53,8 +93,8 @@ function get_chart(){
     	draw_chart(data);
     });
     
-    /* need returning itself for 1st setInteval 
-     * call (I need graph rendered onload) 
+    /* function that returns itself: I need to be called on load, 
+     * so in setInterval is first called and then repeated
      */
     
     return get_chart;
