@@ -10,7 +10,7 @@ from django.http.response import HttpResponse
 
 def get_voters_top_ten(request):
     """
-    fetch top ten voters from DB, creating two list (votes and labels).
+    @summary: fetch top ten voters from DB, creating two list (votes and labels)
     @rtype: applcation/json
     @return: dictionary containing two lists: names and votes
     """
@@ -33,15 +33,22 @@ def home_page(request):
 
 @login_required
 def send_vote(request):
-    if request.user.is_authenticated:
-        obj_user = request.user
+    """
+    @precondition: user is_authenticated is true
+    @summary: vote is saved and total votes counter is incremented
+    @rtype: HttpResponse object
+    @return: string
+    """
+    obj_user = request.user
 
-        obj_voter, created = Voter.objects.get_or_create(
+    obj_voter, created = Voter.objects.get_or_create(
                                     fko_user=obj_user,
                                     defaults={'vote_counter': 0}
                                     )
 
-        obj_voter.vote_counter = F('vote_counter') + 1
-        obj_voter.save()
+    obj_voter.vote_counter = F('vote_counter') + 1
+    obj_voter.save()
 
-    return HttpResponse("vote request sent")
+    status = "Vote sent. Thank you!"
+
+    return HttpResponse(status)

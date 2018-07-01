@@ -16,27 +16,13 @@
 <p>Do you love pizza?  <a href="{% url 'login' %}">Sign in and vote</a></p>
 {% endif %}
 
-
-
 {% endblock %}
 
 {% block footer_scripts %}
- {% if user.is_authenticated %}
- <script>
- 
- 
- $("#send_vote_btn").on('click', function(){
-	$.ajax({
-		url: "/vote_manager/send_vote",
-		success: function(){
-			// update existing chart 
-			get_chart();
-			$.notifyBar({ cssClass: "success", html: "Vote sent. Thank you!", position: "bottom" });
-		}
-	})
- })
- 
-  
+
+{% if user.is_authenticated %}
+ <script> 
+ $("#send_vote_btn").on('click', send_vote);
  </script>
 {% endif %}
 
