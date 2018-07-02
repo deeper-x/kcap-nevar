@@ -33,7 +33,8 @@ $ pipenv run python3 manage.py test -k
 * As _anonymous_ user, you can view the top-ten chart. If you want to vote, you can sign up, log in and express your vote.
 * As a logged in user, you can vote clicking on the "I love pizza" button.
 * Bar chart shows: in Y number of votes, in X voters.
-* In home page, on the top menu bar:
+
+In home page, on the top menu bar:
 1. If logged in, user will have VOTE and SIGN OUT links 
 2. If not logged in, user will have SIGN IN, RESULTS and SIGN UP links
 
