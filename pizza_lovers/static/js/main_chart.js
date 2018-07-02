@@ -93,8 +93,8 @@ function get_chart(){
     	draw_chart(data);
     });
     
-    /* function that returns itself: I need to be called on load, 
-     * so in setInterval is first called and then repeated
+    /* function that returns itself: will be used in setInterval, 
+     * so I need to be called on load, then repeated
      */
     
     return get_chart;
