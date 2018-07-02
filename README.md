@@ -13,8 +13,8 @@ $ sudo docker-compose run web python3 manage.py migrate
 $ # run compose
 $ sudo docker-compose up
 ```
-
-Output should be very similar to:
+Now you build, (re)create, start, and attache to containers for a service.
+At the end, output should be very similar to:
 ```sh
 db_1   | 2018-07-02 17:44:54.082 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
 db_1   | 2018-07-02 17:44:54.082 UTC [1] LOG:  listening on IPv6 address "::", port 5432
