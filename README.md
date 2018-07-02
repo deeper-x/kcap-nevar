@@ -14,12 +14,17 @@ $ # run compose
 $ sudo docker-compose up
 ```
 
+## Unit test
+```sh
+$ pipenv run python3 manage.py test -k
+```
 
 ## Requirements
 * python 3.6 or higher
 * Docker (+ Compose)
 
 #TODO - URI to docker registry (image)
+
 
 ## Features description
 * A user can signup and login, and tell how much he loves pizza, by clicking the "I love pizza" button
