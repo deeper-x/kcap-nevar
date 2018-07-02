@@ -1,6 +1,6 @@
 # Kcap Nevar - version 0.0.2
 
-> Sign up and vote for pizza. Vote and become one of the top ten pizza lovers. 
+> Sign up and vote for pizza. Become one of the top ten pizza lovers!
 
 
 ## Deploy
