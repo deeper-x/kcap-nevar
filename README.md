@@ -80,9 +80,11 @@ OK
 Preserving test database for alias 'default'...
 ```
 
-## Requirements
-* python 3.6 (+ pipenv) 
+## Requirements 
 * Docker (+ Compose)
+
+## Python details
+* python 3.6 (+ pipenv)
 
 
 ## Release History
