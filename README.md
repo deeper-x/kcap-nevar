@@ -8,7 +8,7 @@
 Run as docker  
 ```sh
 $ cd <root_dir>
-$ #first create db structure
+$ # first create db structure
 $ sudo docker-compose run web python3 manage.py migrate
 $ # run compose
 $ sudo docker-compose up
