@@ -2,6 +2,19 @@
 
 > Sign up and vote for pizza. Become one of the top ten pizza lovers!
 
+## Description (features list)
+* A user can signup and login, and tell how much he loves pizza, by clicking the "I love pizza" button
+* When vote is registered, barchart is updated showing real time data. 
+* Chart is updated also at regular intervals. 
+* As _anonymous_ user, you can view the top-ten chart. If you want to vote, you can sign up, log in and express your vote.
+* As a logged in user, you can vote clicking on the "I love pizza" button.
+* Bar chart shows: in Y number of votes, in X voters.
+
+In home page, on the top menu bar:
+1. If logged in, user will have VOTE and SIGN OUT links 
+2. If not logged in, user will have SIGN IN, RESULTS and SIGN UP links
+
+
 
 ## Deploy (Linux and OSX)
  
@@ -70,19 +83,6 @@ Preserving test database for alias 'default'...
 ## Requirements
 * python 3.6 (+ pipenv) 
 * Docker (+ Compose)
-
-
-## Features description
-* A user can signup and login, and tell how much he loves pizza, by clicking the "I love pizza" button
-* When vote is registered, barchart is updated showing real time data. 
-* Chart is updated also at regular intervals. 
-* As _anonymous_ user, you can view the top-ten chart. If you want to vote, you can sign up, log in and express your vote.
-* As a logged in user, you can vote clicking on the "I love pizza" button.
-* Bar chart shows: in Y number of votes, in X voters.
-
-In home page, on the top menu bar:
-1. If logged in, user will have VOTE and SIGN OUT links 
-2. If not logged in, user will have SIGN IN, RESULTS and SIGN UP links
 
 
 ## Release History
