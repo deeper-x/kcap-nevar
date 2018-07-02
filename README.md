@@ -13,10 +13,56 @@ $ sudo docker-compose run web python3 manage.py migrate
 $ # run compose
 $ sudo docker-compose up
 ```
+Output should be very similar to:
+```sh
+db_1   | 2018-07-02 17:44:54.082 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1   | 2018-07-02 17:44:54.082 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db_1   | 2018-07-02 17:44:54.143 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db_1   | 2018-07-02 17:44:54.254 UTC [20] LOG:  database system was shut down at 2018-07-02 17:37:29 UTC
+db_1   | 2018-07-02 17:44:54.339 UTC [1] LOG:  database system is ready to accept connections
+web_1  | Performing system checks...
+web_1  | 
+web_1  | System check identified no issues (0 silenced).
+web_1  | July 02, 2018 - 17:48:04
+web_1  | Django version 2.0, using settings 'pizza_lovers.settings'
+web_1  | Starting development server at http://0.0.0.0:8000/
+web_1  | Quit the server with CONTROL-C.
+```
+
+Docker is up, test it:
+
+```sh
+$ curl -I http://127.0.0.1:8000/auth_voters/login/
+```
+
+Status code is 200, OK.
+```sh
+HTTP/1.1 200 OK
+Date: Mon, 02 Jul 2018 17:50:39 GMT
+Server: WSGIServer/0.2 CPython/3.6.6
+Content-Type: text/html; charset=utf-8
+Expires: Mon, 02 Jul 2018 17:50:39 GMT
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+
+```
+
 
 ## Unit test
 ```sh
-$ pipenv run python3 manage.py test -k
+$ sudo docker-compose run web python3 manage.py test -k
+```
+
+Output should be something like that:
+```sh
+Starting pizza_lovers_db_1 ... done
+Using existing test database for alias 'default'...
+System check identified no issues (0 silenced).
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 1.330s
+
+OK
+Preserving test database for alias 'default'...
 ```
 
 ## Requirements
