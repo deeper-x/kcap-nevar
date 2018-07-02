@@ -37,7 +37,6 @@ class PizzaLoginTest(TestCase):
 
     def test_logout(self):
         c = Client()
-
         response = c.get(reverse('logout'), follow=True)
 
         success_page = '/auth_voters/login?next=/auth_voters/logout/'
