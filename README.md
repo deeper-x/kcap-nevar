@@ -10,10 +10,14 @@ Run docker services:
 $ cd <root_dir>
 $ # first create db structure
 $ sudo docker-compose run web python3 manage.py migrate
+```
+
+Now you build, (re)create, start, and attach to containers for a service:
+```sh
 $ # run compose
 $ sudo docker-compose up
 ```
-Now you build, (re)create, start, and attach to containers for a service.
+
 At the end, output should be very similar to:
 ```sh
 db_1   | 2018-07-02 17:44:54.082 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
