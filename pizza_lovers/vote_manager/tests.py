@@ -22,7 +22,7 @@ class PizzaVoteTest(TestCase):
         response_url = response.request['PATH_INFO']
 
         # registered user can access to view
-        self.assertEqual(success_url,response_url)
+        self.assertEqual(success_url, response_url)
 
     def test_B_vote_failure(self):
         c = Client()
