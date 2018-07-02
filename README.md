@@ -3,9 +3,9 @@
 > Sign up and vote for pizza. Become one of the top ten pizza lovers!
 
 
-## Deploy
+## Deploy (Linux and OSX)
  
-Run as docker  
+Run docker services:  
 ```sh
 $ cd <root_dir>
 $ # first create db structure
@@ -13,6 +13,7 @@ $ sudo docker-compose run web python3 manage.py migrate
 $ # run compose
 $ sudo docker-compose up
 ```
+
 Output should be very similar to:
 ```sh
 db_1   | 2018-07-02 17:44:54.082 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
@@ -30,7 +31,6 @@ web_1  | Quit the server with CONTROL-C.
 ```
 
 Docker is up, test it:
-
 ```sh
 $ curl -I http://127.0.0.1:8000/auth_voters/login/
 ```
@@ -43,9 +43,7 @@ Server: WSGIServer/0.2 CPython/3.6.6
 Content-Type: text/html; charset=utf-8
 Expires: Mon, 02 Jul 2018 17:50:39 GMT
 Cache-Control: max-age=0, no-cache, no-store, must-revalidate
-
 ```
-
 
 ## Unit test
 ```sh
@@ -66,7 +64,7 @@ Preserving test database for alias 'default'...
 ```
 
 ## Requirements
-* python 3.6
+* python 3.6 (+ pipenv) 
 * Docker (+ Compose)
 
 
