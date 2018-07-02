@@ -20,10 +20,8 @@ $ pipenv run python3 manage.py test -k
 ```
 
 ## Requirements
-* python 3.6 or higher
+* python 3.6
 * Docker (+ Compose)
-
-#TODO - URI to docker registry (image)
 
 
 ## Features description
