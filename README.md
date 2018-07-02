@@ -35,7 +35,7 @@ Docker is up, test it:
 $ curl -I http://127.0.0.1:8000/auth_voters/login/
 ```
 
-Status code is 200, OK.
+Status code should be 200. 
 ```sh
 HTTP/1.1 200 OK
 Date: Mon, 02 Jul 2018 17:50:39 GMT
