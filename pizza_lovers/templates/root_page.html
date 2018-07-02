@@ -111,10 +111,10 @@
 
     <!-- Contact form JavaScript -->
     <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
-    <script src="{% static 'js/contact_me.js' %}"></script>
 
     <!-- Custom scripts for this template -->
     <link rel="stylesheet" href="{% static 'css/jquery.notifyBar.css' %}">
+
     <script src="{% static 'js/agency.min.js' %}"></script>
 
     <script src="{% static 'js/jquery.notifyBar.js' %}"></script>
@@ -127,11 +127,14 @@
 
 {% endblock %}
 
+{% if user.is_authenticated %}
 <script>
+
 $("#link_vote").on('click', function(){	
 	$.notifyBar({ cssClass: "default", html: "Please press the 'love button'...", position: "bottom" });
 })
 
 </script>
 
+{% endif %}
 </html>
