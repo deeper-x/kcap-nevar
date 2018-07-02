@@ -13,7 +13,6 @@ def proxy_auth(request):
 
     if obj_user is not None:
         login(request, obj_user)
-
         # if get parameter ?next= is set, redirect there
         if next_page != "home_page":
             return redirect(next_page)
