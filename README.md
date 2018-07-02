@@ -40,8 +40,8 @@ In home page, on the top menu bar:
 
 
 ## Release History
-* 0.0.1
-    * unit test on auth system
+* 0.0.2
+    * unit test on auth system and vote management
 * 0.0.1
     * express love for pizza: log in and vote
 
