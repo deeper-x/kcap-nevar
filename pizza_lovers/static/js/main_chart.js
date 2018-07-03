@@ -78,7 +78,8 @@ function draw_chart(data_obj){
 			        scales: {
             				yAxes: [{
                 				ticks: {
-                    					beginAtZero:true
+                    					beginAtZero: true,
+                                                        stepSize: 1
                 				}
             				}]
         			}
