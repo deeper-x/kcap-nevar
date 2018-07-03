@@ -90,7 +90,8 @@ OK
 Preserving test database for alias 'default'...
 ```
 
-## Running on staging server
+## Running on remote server
+If you prefer remote instance, just log in via ssh and run dev server 
 
 ```sh
 # ssh on remote server 
@@ -107,16 +108,17 @@ http://94.177.223.143:8001/auth_voters/login/
 ```
 
 
-
-
 ## Requirements 
 * Docker (+ Compose)
 
 ##  Testing environment
-* Google chrome Version 67.0.3396.99 (Official Build) (64-bit)
 * Docker version 18.03.1-ce, build 9ee9f40
 * docker-compose version 1.21.2, build a133471
 * OS: Ubuntu 16.04.3 LTS - Linux PC-dev 4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+* django 2.0
+* PostgreSQL 9.5.10 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609, 64-bit
+* psycopg2 '2.7.5 (dt dec pq3 ext lo64)'
+* Google chrome Version 67.0.3396.99 (Official Build) (64-bit)
 
 
 ## Python versions/details
