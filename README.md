@@ -17,7 +17,7 @@ In home page, on the top menu bar:
 
 
 
-## Deploy (Linux and OSX)
+## Deploy (with Docker) on Linux/OSX
 Preliminary actions:
 ```sh
 $ cd <project_root_dir>
