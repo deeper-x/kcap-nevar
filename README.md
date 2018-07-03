@@ -67,7 +67,7 @@ Expires: Mon, 02 Jul 2018 17:50:39 GMT
 Cache-Control: max-age=0, no-cache, no-store, must-revalidate
 ```
 
-Services are up and running. Open browser
+Services are up and running. Open browser:
 ```sh
 http://127.0.0.1:8000/auth_voters/login/
 ```
