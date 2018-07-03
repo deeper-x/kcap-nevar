@@ -1,9 +1,10 @@
-# Kcap Nevar - version 0.0.2
+# Kcap Nevar - version 0.0.3
 
 > Sign up and vote for pizza. Become one of the top ten pizza lovers!
 
-## Description (features list)
-* A user can signup and login, and tell how much he loves pizza, by clicking the "I love pizza" button
+## Description and features list
+User can signup, login and tell how much he loves pizza by clicking the "I love pizza" button
+
 * When vote is registered, barchart is updated showing real time data. 
 * Chart is updated also at regular intervals. 
 * As _anonymous_ user, you can view the top-ten chart. If you want to vote, you can sign up, log in and express your vote.
@@ -17,17 +18,21 @@ In home page, on the top menu bar:
 
 
 ## Deploy (Linux and OSX)
- 
+Preliminary actions:
+```sh
+$ cd <project_root_dir>
+$ export PYTHONPATH=${PYTHONPATH}:$( pwd )
+```
+
 Run docker services:  
 ```sh
-$ cd <root_dir>
-$ # first create db structure
+$ # first migrate db structure
 $ sudo docker-compose run web python3 manage.py migrate
 ```
 
 Now you build, (re)create, start, and attach to containers for a service:
 ```sh
-$ # run compose
+$ # run services with compose
 $ sudo docker-compose up
 ```
 
@@ -67,7 +72,7 @@ Cache-Control: max-age=0, no-cache, no-store, must-revalidate
 $ sudo docker-compose run web python3 manage.py test -k
 ```
 
-Output should be something like that:
+Result should be something like that:
 ```sh
 Starting pizza_lovers_db_1 ... done
 Using existing test database for alias 'default'...
@@ -88,8 +93,10 @@ Preserving test database for alias 'default'...
 
 
 ## Release History
+* 0.0.3
+    * updated README
 * 0.0.2
-    * unit test on auth system and vote management
+    * unittest on auth system and vote management
 * 0.0.1
     * express love for pizza: log in and vote
 
