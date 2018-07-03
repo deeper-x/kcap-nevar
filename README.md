@@ -72,20 +72,6 @@ Services are up and running. Open browser:
 http://127.0.0.1:8000/auth_voters/login/
 ```
 
-## Running on staging server
-```sh
-# ssh on remote server 
-$ cd projects/kcap-nevar
-$ export PYTHONPATH=$(pwd)
-$ pipenv shell
-$ pipenv run python3 manage.py runserver 0.0.0.0:8001
-```
-Now open your browser:
-
-```sh
-http://94.177.223.143:8001/auth_voters/login/
-```
-
 ## Unit test
 ```sh
 $ sudo docker-compose run web python3 manage.py test -k
@@ -103,6 +89,24 @@ Ran 5 tests in 1.330s
 OK
 Preserving test database for alias 'default'...
 ```
+
+## Running on staging server
+
+```sh
+# ssh on remote server 
+$ cd projects/kcap-nevar
+$ export PYTHONPATH=$(pwd)
+$ pipenv shell
+$ pipenv run python3 manage.py runserver 0.0.0.0:8001
+```
+Now open your browser:
+
+```sh
+http://94.177.223.143:8001/auth_voters/login/
+```
+
+
+
 
 ## Requirements 
 * Docker (+ Compose)
