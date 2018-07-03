@@ -114,9 +114,8 @@ Preserving test database for alias 'default'...
 * OS: Ubuntu 16.04.3 LTS - Linux PC-dev 4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 
 
-## Python details
-* python 3.6 (+ pipenv)
-
+## Python versions/details
+* python 3.5, 3.6 (+ pipenv)
 
 ## Release History
 * 0.0.3
