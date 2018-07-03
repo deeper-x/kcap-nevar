@@ -94,8 +94,9 @@ Preserving test database for alias 'default'...
 
 ```sh
 # ssh on remote server 
-$ cd projects/kcap-nevar
+$ cd projects/kcap-nevar/pizza_lovers
 $ export PYTHONPATH=$(pwd)
+$ # activate shell o run pipenv directly
 $ pipenv shell
 $ pipenv run python3 manage.py runserver 0.0.0.0:8001
 ```
