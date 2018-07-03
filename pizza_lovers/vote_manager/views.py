@@ -49,6 +49,6 @@ def send_vote(request):
     obj_voter.vote_counter = F('vote_counter') + 1
     obj_voter.save()
 
-    status = "Vote sent. Thank you!"
+    status = "Another vote, thanks again!" if not created else "Your first vote, thank you!"
 
     return HttpResponse(status)
