@@ -73,7 +73,16 @@ function draw_chart(data_obj){
     	            data: data_obj.votes,
     	        }]
     	    },
-    	    options: {animation: false}
+    	    options: {
+			animation: false,
+			        scales: {
+            				yAxes: [{
+                				ticks: {
+                    					beginAtZero:true
+                				}
+            				}]
+        			}
+                     }
     	});
     }
 }
