@@ -24,13 +24,13 @@ $ cd <project_root_dir>
 $ export PYTHONPATH=${PYTHONPATH}:$( pwd )
 ```
 
-Run docker services:  
+Run migration on web services:  
 ```sh
-$ # first migrate db structure
+$ # remember: una tantum action 
 $ sudo docker-compose run web python3 manage.py migrate
 ```
 
-Now you build, (re)create, start, and attach to containers for a service:
+Set-up ended, now build, (re)create, start services and attach to containers:
 ```sh
 $ # run services with compose
 $ sudo docker-compose up
