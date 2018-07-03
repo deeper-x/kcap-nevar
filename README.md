@@ -67,6 +67,10 @@ Expires: Mon, 02 Jul 2018 17:50:39 GMT
 Cache-Control: max-age=0, no-cache, no-store, must-revalidate
 ```
 
+Services are up and running. Open browser
+
+
+
 ## Unit test
 ```sh
 $ sudo docker-compose run web python3 manage.py test -k
@@ -87,6 +91,13 @@ Preserving test database for alias 'default'...
 
 ## Requirements 
 * Docker (+ Compose)
+
+##  Testing environment
+* Google chrome Version 67.0.3396.99 (Official Build) (64-bit)
+* Docker version 18.03.1-ce, build 9ee9f40
+* docker-compose version 1.21.2, build a133471
+* OS: Ubuntu 16.04.3 LTS - Linux PC-dev 4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
 
 ## Python details
 * python 3.6 (+ pipenv)
