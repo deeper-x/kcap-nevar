@@ -22,7 +22,7 @@ function send_vote(){
 				// update existing chart 
 				get_chart();
 				
-				pizza_notify(data=data);
+				pizza_notify({data:data});
 			}
 	})
 	
@@ -34,17 +34,24 @@ function send_vote(){
 }
 
 
-function pizza_notify(data=APP_NAME, css_class="success", msg_position="bottom"){
+function pizza_notify(obj_input){
 	/*
 	 * @summary: notify wrapper
 	 * @return: notification
-	 * @param data: text message [default: APP_NAME]
-	 * @param css_class: notification style. error, warning, success [default]
-	 * @param msg_position: top, bottom [default]
+	 * @param obj_input.data: text message [default: APP_NAME]
+	 * @param parameters.css_class: notification style. error, warning, success [default]
+	 * @param parameters.msg_position: top, bottom [default]
 	 */
-	$.notifyBar({ cssClass: css_class, 
-				  html: data, 
-				  position: msg_position });
+	
+	var obj_par = {};
+	obj_par.data = obj_input.data;
+	obj_par.css_class = obj_input.css_class || "success";
+	obj_par.msg_position = obj_input.msg_position || "bottom";
+	
+	
+	$.notifyBar({ cssClass: obj_par.css_class, 
+				  html: obj_par.data, 
+				  position: obj_par.msg_position });
 	
 }
 
