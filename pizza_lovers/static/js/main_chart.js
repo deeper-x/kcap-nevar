@@ -44,7 +44,7 @@ function pizza_notify(obj_input){
 	 */
 	
 	var obj_par = {};
-	obj_par.data = obj_input.data;
+	obj_par.data = obj_input.data || APP_NAME;
 	obj_par.css_class = obj_input.css_class || "success";
 	obj_par.msg_position = obj_input.msg_position || "bottom";
 	
