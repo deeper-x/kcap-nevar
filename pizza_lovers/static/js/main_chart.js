@@ -39,8 +39,8 @@ function pizza_notify(obj_input){
 	 * @summary: notify wrapper
 	 * @return: notification
 	 * @param obj_input.data: text message [default: APP_NAME]
-	 * @param parameters.css_class: notification style. error, warning, success [default]
-	 * @param parameters.msg_position: top, bottom [default]
+	 * @param obj_input.css_class: notification style. error, warning, success [default]
+	 * @param obj_input.msg_position: top, bottom [default]
 	 */
 	
 	var obj_par = {};
