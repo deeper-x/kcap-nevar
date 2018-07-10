@@ -1,4 +1,4 @@
-# Kcap Nevar - version 0.0.5
+# Kcap Nevar - version 0.0.6
 
 > Sign up and vote for pizza. Become one of the top ten pizza lovers!
 
@@ -125,6 +125,8 @@ http://94.177.223.143:8001/auth_voters/login/
 * python 3.5, 3.6 (+ pipenv)
 
 ## Release History
+* 0.0.6
+    * cache file update optimization
 * 0.0.5
     * data caching 
 * 0.0.4
