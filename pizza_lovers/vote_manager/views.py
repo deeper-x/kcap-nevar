@@ -42,7 +42,6 @@ def send_vote(request):
     json_to_save = json.dumps(data_container)
     obj_cache.update_top_voters(json_to_save)
 
-
     status = "Another vote, thanks again!" if not created else "Your first vote, thank you!"
 
     return HttpResponse(status)
