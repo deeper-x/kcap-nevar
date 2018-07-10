@@ -13,7 +13,7 @@ class PizzaCache:
         @summary: if cache file is not present, creates one
         """
         if not os.path.isfile(self._cache_file_path):
-            data = {"names": [DEFAULT_LABEL], "votes": [0]}
+            data = {"names": [DEFAULT_LABEL], "votes": [0], "ids":[]}
             json_data = json.dumps(data)
 
             with open(self._cache_file_path, 'w') as empty_file:
