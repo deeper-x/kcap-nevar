@@ -39,8 +39,11 @@ def send_vote(request):
     obj_cache = PizzaCache()
 
     data_container = get_voters_dict()
-    json_to_save = json.dumps(data_container)
-    obj_cache.update_top_voters(json_to_save)
+
+    # update cache-file only if user is in top X, or if data container is empty
+    if obj_user.id in data_container['ids'] or not data_container['ids']:
+        json_to_save = json.dumps(data_container)
+        obj_cache.update_top_voters(json_to_save)
 
     status = "Another vote, thanks again!" if not created else "Your first vote, thank you!"
 

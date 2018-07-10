@@ -7,17 +7,19 @@ def get_voters_dict(tot=10):
     @summary: fetch top ten voters from DB, creating two list (votes and labels)
     @param tot: number of entries to be read
     @rtype: dict
-    @return: dictionary containing two lists: names and votes
+    @return: dictionary containing three lists: names, votes, ids
     """
-    list_votes, list_names = [], []
+    list_votes, list_names, list_ids = [], [], []
     qs_votes = Voter.objects.all().order_by('-vote_counter')[:tot]
 
     for i in qs_votes:
         list_votes.append(i.vote_counter)
         list_names.append(i.fko_user.username)
+        list_ids.append(i.fko_user.id)
 
     dict_container = {'names': list_names,
-                      'votes': list_votes}
+                      'votes': list_votes,
+                      'ids': list_ids}
 
     return dict_container
 
