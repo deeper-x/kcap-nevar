@@ -131,3 +131,5 @@ LOGIN_URL = '/auth_voters/login'
 
 CACHE_DIR = STATIC_URL + "cache/"
 CACHE_FILE = CACHE_DIR + "top_voters.json"
+
+DEFAULT_LABEL = "NO DATA"
