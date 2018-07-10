@@ -32,14 +32,15 @@ def send_vote(request):
     @rtype: HttpResponse object, content-type: text/html
     @return: string
     """
+
+    obj_user = request.user
+    obj_voter, created = save_vote(obj_user)
+
     obj_cache = PizzaCache()
 
     data_container = get_voters_dict()
     json_to_save = json.dumps(data_container)
     obj_cache.update_top_voters(json_to_save)
-
-    obj_user = request.user
-    obj_voter, created = save_vote(obj_user)
 
     status = "Another vote, thanks again!" if not created else "Your first vote, thank you!"
 
