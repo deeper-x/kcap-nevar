@@ -2,7 +2,7 @@
  * Main chart settings
  */
 var APP_NAME="Kcap Nevar"
-var REFRESH_INT = 60000; // in ms
+var REFRESH_INT = 6000; // in ms
 var BARS_BG = "rgb(120, 209, 225, 0.3)";
 var BARS_BR = "rgb(206, 172, 50)";
 var CHART_LABEL = APP_NAME + " - Top 10 voters";

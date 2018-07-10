@@ -128,3 +128,6 @@ STATICFILES_DIRS = [
 
 STATIC_URL = '/static/'
 LOGIN_URL = '/auth_voters/login'
+
+CACHE_DIR = STATIC_URL + "cache/"
+CACHE_FILE = CACHE_DIR + "top_voters.json"
