@@ -1,4 +1,4 @@
-# Kcap Nevar - version 0.0.5
+# Kcap Nevar - version 0.0.6
 
 > Sign up and vote for pizza. Become one of the top ten pizza lovers!
 
@@ -90,24 +90,6 @@ OK
 Preserving test database for alias 'default'...
 ```
 
-## Running on remote server
-If you prefer remote instance, just log in via ssh and run dev server 
-
-```sh
-# ssh on remote server 
-$ cd projects/kcap-nevar/pizza_lovers
-$ export PYTHONPATH=$(pwd)
-$ # activate shell o run pipenv directly
-$ pipenv shell
-$ pipenv run python3 manage.py runserver 0.0.0.0:8001
-```
-Now open your browser:
-
-```sh
-http://94.177.223.143:8001/auth_voters/login/
-```
-
-
 ## Requirements 
 * Docker (+ Compose)
 
@@ -125,8 +107,10 @@ http://94.177.223.143:8001/auth_voters/login/
 * python 3.5, 3.6 (+ pipenv)
 
 ## Release History
+* 0.0.6
+    * memcached support
 * 0.0.5
-    * data caching 
+    * data caching on JSON 
 * 0.0.4
     * updated pizza_notify 
 * 0.0.3
