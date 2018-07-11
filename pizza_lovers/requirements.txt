@@ -2,3 +2,4 @@ django==2
 django-widget-tweaks
 psycopg2
 psycopg2-binary
+python3-memcached

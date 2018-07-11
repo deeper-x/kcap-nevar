@@ -1,9 +1,9 @@
-from pizza_lovers.settings import CACHE_FILE, DEFAULT_LABEL
+from pizza_lovers.settings import CACHE_FILE, EMPTY_DATA_GRAPH
 import os
 import json
 
 
-class PizzaCache:
+class PizzaCacheFile:
     def __init__(self):
         self._cache_file_path = os.getcwd() + CACHE_FILE
         self.__init_file()
@@ -13,8 +13,7 @@ class PizzaCache:
         @summary: if cache file is not present, creates one
         """
         if not os.path.isfile(self._cache_file_path):
-            data = {"names": [DEFAULT_LABEL], "votes": [0], "ids":[]}
-            json_data = json.dumps(data)
+            json_data = json.dumps(EMPTY_DATA_GRAPH)
 
             with open(self._cache_file_path, 'w') as empty_file:
                 json.dump(json_data, empty_file)
@@ -39,6 +38,3 @@ class PizzaCache:
             json_data = json.loads(str_data)
 
             return json_data
-
-
-

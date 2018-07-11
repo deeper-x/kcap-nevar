@@ -3,7 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.http.response import HttpResponse
 from vote_manager.utils.db_helpers import get_voters_dict, save_vote
-from vote_manager.utils.cache_helpers import PizzaCache
+from vote_manager.utils.cache_mem_helpers import PizzaCacheMem
+from vote_manager.utils.cache_file_helpers import PizzaCacheFile
 import json
 
 
@@ -14,8 +15,14 @@ def get_voters_top_ten(request):
     @return: dictionary containing two lists: names and votes
     """
 
-    obj_cache = PizzaCache()
+    obj_cache = PizzaCacheMem()
     data_container = obj_cache.get_top_voters()
+
+    # if cache is cold, get data from DB and warm cache
+    if not data_container['ids']:
+        data_container = get_voters_dict()
+        json_to_save = json.dumps(data_container)
+        obj_cache.update_top_voters(json_to_save)
 
     return JsonResponse(data_container)
 
@@ -36,11 +43,11 @@ def send_vote(request):
     obj_user = request.user
     obj_voter, created = save_vote(obj_user)
 
-    obj_cache = PizzaCache()
+    obj_cache = PizzaCacheMem()
 
     data_container = get_voters_dict()
 
-    # update cache-file only if user is in top X, or if data container is empty
+    # warming cache only if user is in top X, or if data container is empty
     if obj_user.id in data_container['ids'] or not data_container['ids']:
         json_to_save = json.dumps(data_container)
         obj_cache.update_top_voters(json_to_save)

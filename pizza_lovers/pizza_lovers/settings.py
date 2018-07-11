@@ -80,11 +80,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres',
-        'HOST': 'db',
-        'PORT': '5432',
+        'PASSWORD': 'd3m0p4ss!',
+        'HOST': 'db_server',
+        'PORT': 5432,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -129,7 +129,15 @@ STATICFILES_DIRS = [
 STATIC_URL = '/static/'
 LOGIN_URL = '/auth_voters/login'
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': 'memcache_server:11211',
+    }
+}
+
 CACHE_DIR = STATIC_URL + "cache/"
 CACHE_FILE = CACHE_DIR + "top_voters.json"
 
 DEFAULT_LABEL = "NO DATA"
+EMPTY_DATA_GRAPH = {"names": [DEFAULT_LABEL], "votes": [0], "ids": []}
