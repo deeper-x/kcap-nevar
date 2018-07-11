@@ -8,6 +8,8 @@ name = "pypi"
 "psycopg2-binary" = "*"
 Django = "==2"
 django-widget-tweaks = "*"
+pymemcache = "*"
+"python3-memcached" = "*"
 
 [dev-packages]
 

@@ -1,9 +1,15 @@
-version: '2'
+version: '3.6'
 
 services:
   db:
-    image: postgres
+     image: postgres
+     networks:
+       pizza_net:
+         aliases:
+           - db_server
   web:
+    networks:
+      - pizza_net
     build: .
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
@@ -12,3 +18,15 @@ services:
       - "8000:8000"
     depends_on:
       - db
+  memcached:
+    networks:
+      pizza_net:
+        aliases:
+          - memcache_server
+    image: sameersbn/memcached:latest
+    ports:
+      - "11211:11211"
+    restart: always
+
+networks:
+  pizza_net:
