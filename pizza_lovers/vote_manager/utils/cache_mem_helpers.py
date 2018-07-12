@@ -23,9 +23,9 @@ class PizzaCacheMem:
         @return: content
         @rtype: JSON
         """
-        json_data = json.dumps(EMPTY_DATA_GRAPH)
+        empty_json_data = json.dumps(EMPTY_DATA_GRAPH)
 
-        b_top_voters = self.__obj_client.get('top_voters') or json_data
+        b_top_voters = self.__obj_client.get('top_voters') or empty_json_data
 
         result = json.loads(b_top_voters)
 
