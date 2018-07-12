@@ -44,11 +44,11 @@ def send_vote(request):
     obj_voter, created = save_vote(obj_user)
 
     obj_cache = PizzaCacheMem()
+    dict_top_voters = obj_cache.get_top_voters()
 
-    data_container = get_voters_dict()
-
-    # warming cache only if user is in top X, or if data container is empty
-    if obj_user.id in data_container['ids'] or not data_container['ids']:
+    # calling DB and warming cache only if user is in top X, or if data container is empty
+    if obj_user.id in dict_top_voters['ids'] or not dict_top_voters['ids']:
+        data_container = get_voters_dict()
         json_to_save = json.dumps(data_container)
         obj_cache.update_top_voters(json_to_save)
 
