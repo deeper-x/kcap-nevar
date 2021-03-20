@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
-Django = "==2.2.13"
+Django = "==2.2.18"
 django-widget-tweaks = "*"
 pymemcache = "*"
 "python3-memcached" = "*"
